@@ -19,5 +19,5 @@ from bot.views import helloWorld
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', helloWorld),
+    path('', helloWorld),
 ]
