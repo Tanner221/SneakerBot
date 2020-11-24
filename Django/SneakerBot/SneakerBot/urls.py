@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bot.views import helloWorld
+from bot.views import getIndex, getForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', helloWorld),
+    path('', getIndex),
+    path('input/', getForm),
 ]
